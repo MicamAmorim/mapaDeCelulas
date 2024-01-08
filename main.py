@@ -25,13 +25,12 @@ title_html = """
             text-transform: uppercase; /* Texto em caixa alta */
         }
     </style>
-    <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp</div>
+    <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp:\n</div>
 """
-st.sidebar.markdown('---')
 
 # Usa st.sidebar.markdown para renderizar o HTML com o estilo CSS
 st.sidebar.markdown(title_html, unsafe_allow_html=True)
-
+st.sidebar.markdown('---')
 uploaded_file = "Database/dados.csv"
 
 if uploaded_file:
@@ -47,6 +46,7 @@ if uploaded_file:
     # Mostra o mapa na página
     #st.pydeck_chart(mapa)
     st.title("🦁 Mapa de células - Rede Geração eleita")
+    st.sidebar.markdown('---')
     st.write("👈 Abra a lateral para mais informações")
     mapa.save('mapa.html')
     with open('mapa.html', 'r', encoding='utf-8') as f:
