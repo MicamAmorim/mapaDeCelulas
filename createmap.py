@@ -39,7 +39,8 @@ def createMap(df, printme = False):
   # Adiciona um marcador para cada localização
   for _, row in df.iterrows():
       if pd.notnull(row['Latitude']) and pd.notnull(row['Longitude']):
-          tooltip = f"{row['Nome']}\n{row['Telefone']}\n{row['Endereco']}\n{row['Dia']} - {row['Horario']}"         
+          link = f"<a href='{row['Link']}' target='_blank'>{row['Telefone']}</a>"
+          tooltip = f"{row['Nome']}\n{link}\n{row['Endereco']}\n{row['Dia']} - {row['Horario']}"         
           if "eleita" in row['Nome']:
             folium.Marker([row['Latitude'], row['Longitude']], popup=tooltip, tooltip=tooltip,icon=folium.Icon(color="green")).add_to(m)
           else:
