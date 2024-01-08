@@ -23,7 +23,7 @@ title_html = """
             font-style: italic; /* Estilo itálico */
         }
     </style>
-    <div class='title'>Encontre a célula mais próxima de sua casa</div>
+    <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp</div>
 """
 
 # Usa st.sidebar.markdown para renderizar o HTML com o estilo CSS
@@ -43,6 +43,7 @@ if uploaded_file:
 
     # Mostra o mapa na página
     #st.pydeck_chart(mapa)
+    st.title("🦁Mapas de celulas - Geração eleita🦁")
     st.write("👈 Abra a lateral para mais informações")
     mapa.save('mapa.html')
     with open('mapa.html', 'r', encoding='utf-8') as f:
