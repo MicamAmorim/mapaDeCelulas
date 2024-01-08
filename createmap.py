@@ -41,7 +41,7 @@ def createMap(df, printme = False):
       if pd.notnull(row['Latitude']) and pd.notnull(row['Longitude']):
           tooltip = f"{row['Nome']}\n{row['Telefone']}\n{row['Endereco']}\n{row['Dia']} - {row['Horario']}"         
 
-          folium.Marker([row['Latitude'], row['Longitude']], popup=tooltip, tooltip=tooltip).add_to(m)
+          folium.Marker([row['Latitude'], row['Longitude']], popup=tooltip, tooltip=tooltip,icon=folium.Icon(color="green")).add_to(m)
 
   # Adiciona um marcador para a localização do usuário
   if printme:
