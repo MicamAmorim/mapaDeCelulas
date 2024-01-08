@@ -42,7 +42,7 @@ if uploaded_file:
         link = f"<a href='{row['Link']}' target='_blank'>{row['Telefone']}</a>"
         st.sidebar.write(f"📍 {row['Nome']}: {row['Endereco']} | 📞 WhatsApp : {link}", unsafe_allow_html=True)
     link_red = f"<a href='{'https://www.instagram.com/red_egeracaoeleita/'}' target='_blank'>{'Instagram: @red_egeracaoeleita'}</a>"
-    st.sidebar.write(f"{link_red}")
+    st.sidebar.write(f"{link_red}", unsafe_allow_html=True)
     # Chama a função para criar o mapa
     mapa = createMap(df)
 
