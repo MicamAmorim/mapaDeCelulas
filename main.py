@@ -25,7 +25,7 @@ title_html = """
             text-transform: uppercase; /* Texto em caixa alta */
         }
     </style>
-    <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp:\n</div>
+    <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp:</div>
 """
 
 # Usa st.sidebar.markdown para renderizar o HTML com o estilo CSS
