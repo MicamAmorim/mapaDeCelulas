@@ -42,7 +42,7 @@ def createMap(df, printme = False):
           link = f"<a href='{row['Link']}' target='_blank'>{row['Telefone']}</a>"
           google_maps_url = f"https://www.google.com/maps?q={row['Latitude']},{row['Longitude']}"
           link_gps = f"<a href='{google_maps_url}' target='_blank'>{"Clique aqui para ir ao GPS"}</a>"
-          tooltip = f"{row['Nome']}\n📞{link}\n📍{row['Endereco']}\n{row['Dia']} - {row['Horario']} | {link_gps}"         
+          tooltip = f"{row['Nome']}\n📞{link}\n📍{row['Endereco']}\n{row['Dia']} - {row['Horario']} \n {link_gps}"         
           if "eleita" in row['Nome']:
             folium.Marker([row['Latitude'], row['Longitude']], popup=tooltip, icon=folium.Icon(color="green")).add_to(m)
           else:
