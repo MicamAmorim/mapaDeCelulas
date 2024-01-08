@@ -1,4 +1,4 @@
-Nome,Telefone,Endereco,Dia,Horario,Latitude,Longitude
-Tenda,123456789,Tenda vida e paz,Quinta e domingo,19:30,-14.802158819744324,-39.277382080808714
-Geração eleita 1,987654321,Rua juarez távora,Quarta,19:30,-14.813221694723937,-39.27626255981686
-Geração eleita 2.1,456123789,CEPLAC Q. 11 n°12,Quarta,19:30,-14.809452626648675, -39.28323175956408
+Nome,Telefone,Endereco,Dia,Horario,Latitude,Longitude,Link
+Tenda,123456789,Tenda vida e paz,Quinta e domingo,19:30,-14.802158819744324,-39.277382080808714,https://www.google.com
+Geração eleita 1,987654321,Rua juarez távora,Quarta,19:30,-14.813221694723937,-39.27626255981686,https://www.google.com
+Geração eleita 2.1,456123789,CEPLAC Q. 11 n°12,Quarta,19:30,-14.809452626648675, -39.28323175956408,https://www.google.com
