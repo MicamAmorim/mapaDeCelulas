@@ -7,7 +7,7 @@ import streamlit.components.v1 as components
 st.set_page_config(
     page_title="Visualizador de Mapas",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
     menu_items={
         'Get Help': 'https://www.extremelycoolapp.com/help',
         'Report a bug': "https://www.extremelycoolapp.com/bug",
