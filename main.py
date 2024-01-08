@@ -19,12 +19,15 @@ st.set_page_config(
 title_html = """
     <style>
         .title {
-            font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Escolha a fonte */
+            font-family: 'Impact', sans-serif; /* Fonte Impact */
             font-style: italic; /* Estilo itálico */
+            font-weight: bold; /* Estilo negrito */
+            text-transform: uppercase; /* Texto em caixa alta */
         }
     </style>
     <div class='title'>Encontre a célula mais próxima de sua casa. Nos chame no Whatsapp</div>
 """
+st.markdown('---')
 
 # Usa st.sidebar.markdown para renderizar o HTML com o estilo CSS
 st.sidebar.markdown(title_html, unsafe_allow_html=True)
