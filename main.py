@@ -32,6 +32,7 @@ title_html = """
 st.sidebar.markdown(title_html, unsafe_allow_html=True)
 st.sidebar.markdown('---')
 uploaded_file = "Database/dados.csv"
+st.sidebar.markdown('---')
 
 if uploaded_file:
     # Carrega os dados para um DataFrame
@@ -40,6 +41,8 @@ if uploaded_file:
     for _, row in df.iterrows():
         link = f"<a href='{row['Link']}' target='_blank'>{row['Telefone']}</a>"
         st.sidebar.write(f"📍 {row['Nome']}: {row['Endereco']} | 📞 WhatsApp : {link}", unsafe_allow_html=True)
+    link_red = f"<a href='{'https://www.instagram.com/red_egeracaoeleita/'}' target='_blank'>{'Instagram: @red_egeracaoeleita'}</a>"
+    st.sidebar.write(f"{link_red})
     # Chama a função para criar o mapa
     mapa = createMap(df)
 
