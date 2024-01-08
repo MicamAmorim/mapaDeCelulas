@@ -36,7 +36,8 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
     for _, row in df.iterrows():
-        st.sidebar.write(f"📍 {row['Nome']}: {row['Endereco']} | WhatsApp: {row['Telefone']}")
+         link = f"<a href='{row['URL']}' target='_blank'>{row['Telefone']}</a>"
+        st.sidebar.write(f"📍 {row['Nome']}: {row['Endereco']} | 📞 WhatsApp : {link}")
     # Chama a função para criar o mapa
     mapa = createMap(df)
 
