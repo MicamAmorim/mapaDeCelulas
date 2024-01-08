@@ -34,8 +34,9 @@ uploaded_file = "Database/dados.csv"
 if uploaded_file:
     # Carrega os dados para um DataFrame
     df = pd.read_csv(uploaded_file)
-    for endereco in df['Endereco']:
-        st.sidebar.write(f"📍 {endereco}") 
+
+    for _, row in df.iterrows():
+        st.sidebar.write(f"📍 {row['Nome']}: {row['Endereco']} | WhatsApp: {row['Telefone']}")
     # Chama a função para criar o mapa
     mapa = createMap(df)
 
