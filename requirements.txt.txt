@@ -1,0 +1,6 @@
+folium==0.15.1
+geocoder==1.38.1
+geographiclib==2.0
+geopy==2.4.1
+ipywidgets==8.1.1
+pandas==2.1.2
