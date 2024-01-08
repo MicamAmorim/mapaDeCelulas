@@ -34,7 +34,7 @@ def createMap(df, printme = False):
   df['Latitude'], df['Longitude'] = zip(*df.apply(update_geocode, axis=1))
 
   # Cria um mapa
-  m = folium.Map(location=[vep_lat, vep_long], zoom_start=15)
+  m = folium.Map(location=[vep_lat, vep_long], zoom_start=10)
 
   # Adiciona um marcador para cada localização
   for _, row in df.iterrows():
