@@ -46,7 +46,7 @@ if uploaded_file:
     # Mostra o mapa na página
     #st.pydeck_chart(mapa)
     st.title("🦁 Mapa de células - Rede Geração eleita")
-    st.sidebar.markdown('---')
+    st.markdown('---')
     st.write("👈 Abra a lateral para mais informações")
     mapa.save('mapa.html')
     with open('mapa.html', 'r', encoding='utf-8') as f:
